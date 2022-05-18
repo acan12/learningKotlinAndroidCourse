@@ -16,36 +16,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_of_data"
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:clipToPadding="true"
-        android:maxHeight="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_update"
-        app:layout_constraintTop_toBottomOf="@id/title" />
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_update"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="20dp"
-        android:background="@android:color/holo_green_dark"
-        android:text="Update Data #2"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/btn_tambah" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_tambah"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="20dp"
-        android:background="@android:color/holo_blue_dark"
-        android:text="Tambah Data"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
