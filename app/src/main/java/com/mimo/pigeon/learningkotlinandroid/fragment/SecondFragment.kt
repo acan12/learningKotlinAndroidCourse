@@ -1,4 +1,4 @@
-package com.mimo.pigeon.learningkotlinandroid
+package com.mimo.pigeon.learningkotlinandroid.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -23,7 +23,7 @@ class SecondFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val data: City? = arguments?.getParcelable("DATA_ONE") ?: null
+        val data: City? = arguments?.getParcelable("data") ?: null
         Toast.makeText(activity, "Name: ${data?.name}", Toast.LENGTH_LONG).show()
 
         binding.btnFragment2.setOnClickListener {

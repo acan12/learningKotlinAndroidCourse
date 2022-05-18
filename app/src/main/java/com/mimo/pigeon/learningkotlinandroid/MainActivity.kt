@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import com.mimo.pigeon.learningkotlinandroid.databinding.ActivityMainBinding
+import com.mimo.pigeon.learningkotlinandroid.fragment.OneFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
